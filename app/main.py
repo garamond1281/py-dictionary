@@ -57,7 +57,7 @@ class Dictionary:
                 return node.value
             index = (index + 1) % self.capacity
 
-        raise KeyError
+        raise KeyError(f"Key {key} not found")
 
     def __len__(self) -> int:
         return self.length
